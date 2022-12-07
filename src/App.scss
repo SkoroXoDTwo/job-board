@@ -1,0 +1,14 @@
+.app {
+  padding-top: 120px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__container {
+    max-width: 800px;
+    width: 100%;
+  }
+}
