@@ -1,0 +1,10 @@
+.job-position {
+  padding: 40px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 15px 5px #3ea19c3c;
+
+  &:hover {
+    border-left: 6px solid #3ea19c;
+  }
+}
