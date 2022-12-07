@@ -1,10 +1,121 @@
 .job-position {
-  padding: 40px;
+  padding: 30px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 15px 5px #3ea19c3c;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
-    border-left: 6px solid #3ea19c;
+    border-left: 4px solid #3ea19c;
+    padding-left: 26px;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  &__info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__company {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #53aac0;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+
+  &__badge {
+    padding: 6px;
+    background: #53aac0;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &_black {
+      background: #3f3f3f;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    transition: color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: #53aac0;
+    }
+  }
+
+  &__info-text {
+    margin: 0;
+    padding: 0;
+    color: #909090;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #909090;
+  }
+
+  &__skill {
+    padding: 8px;
+    color: #53aac0;
+    border-radius: 4px;
+    background: #f0faff;
+    font-size: 13px;
+    font-weight: 700;
+    transition: opacity 0.2s, color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+      background: #53aac0;
+    }
   }
 }
