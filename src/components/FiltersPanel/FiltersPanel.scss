@@ -1,5 +1,5 @@
 .panel {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   width: 100%;
   padding: 15px 30px;
   display: flex;
@@ -8,6 +8,8 @@
   box-shadow: 0 0 15px 5px #3ea19c3c;
   box-sizing: border-box;
   background: #fff;
+  gap: 30px;
+  border-radius: 4px;
 
   &__list {
     margin: 0;
@@ -15,6 +17,7 @@
     list-style: none;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
   }
 

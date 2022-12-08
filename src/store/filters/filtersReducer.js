@@ -8,7 +8,7 @@ export const filters = (state = [], action) => {
     }
 
     case REMOVE_FILTERS: {
-      return state.filters((item) => item !== action.filter);
+      return state.filter((item) => item !== action.filter);
     }
 
     case CLEAR_FILTERS: {
