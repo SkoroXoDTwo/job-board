@@ -1,5 +1,6 @@
 import './App.scss';
 import Header from './components/Header/Header';
+import FiltersPanel from './components/FiltersPanel/FiltersPanel';
 import JobList from './components/JobList/JobList';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -17,6 +18,7 @@ function App() {
     <div className="app">
       <div className='app__container'>
         <Header />
+        <FiltersPanel />
         <JobList />
       </div>
     </div>

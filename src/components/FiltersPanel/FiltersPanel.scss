@@ -1,0 +1,70 @@
+.panel {
+  margin-bottom: 60px;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px 5px #3ea19c3c;
+  box-sizing: border-box;
+  background: #fff;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__filter {
+    display: flex;
+  }
+
+  &__filter-name {
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    background: #f0faff;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #53aac0;
+  }
+
+  &__remove-btn {
+    margin: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: url(../../images/icon-remove.svg);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #53aac0;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #3f3f3f;
+    }
+  }
+
+  &__clear-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #53aac0;
+    font-weight: 700;
+    font-size: 12px;
+    transition: text-decoration 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

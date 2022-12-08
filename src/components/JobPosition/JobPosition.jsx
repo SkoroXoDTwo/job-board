@@ -1,5 +1,6 @@
 import './JobPosition.scss'
 
+
 function JobPosition({
   id,
   logo,
@@ -13,8 +14,10 @@ function JobPosition({
   role,
   level,
   languages,
-  tools
+  tools,
+  handleAddFilter
 }) {
+
 
   const skills = [].concat(role, level, languages, tools);
 
@@ -58,7 +61,10 @@ function JobPosition({
 
         <div className='job-position__row'>
           {skills.map((item, index) => (
-            <span className="job-position__skill" key={index}>
+            <span className="job-position__skill"
+              key={index}
+              onClick={() => handleAddFilter(item)}
+            >
               {item}
             </span>
           ))}
