@@ -59,7 +59,7 @@ function JobPosition({
           </div>
         </div>
 
-        <div className='job-position__row'>
+        <div className='job-position__row job-position__row_border'>
           {skills.map((item, index) => (
             <span className="job-position__skill"
               key={index}
