@@ -1,6 +1,6 @@
 import './FiltersPanel.scss'
 import { selectFilters } from '../../store/filters/filtersSelectors'
-import { removeFilters } from '../../store/filters/filtersActions';
+import { removeFilters, clearFilters } from '../../store/filters/filtersActions';
 import { useDispatch, useSelector } from 'react-redux'
 
 function FiltersPanel() {
@@ -20,7 +20,7 @@ function FiltersPanel() {
         }
 
       </ul>
-      <button className="panel__clear-btn">Clear</button>
+      <button className="panel__clear-btn" onClick={() => dispatch(clearFilters)}>Clear</button>
     </div>
   );
 }
